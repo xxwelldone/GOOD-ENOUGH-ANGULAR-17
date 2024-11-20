@@ -11,8 +11,7 @@ export class ApiService {
   private options = {
     headers: {
       accept: 'application/json',
-      Authorization:
-        'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5YTE1ZDY1YjQ0NzJhOWIyZDMxZmE5ZTJlYWExZmE5NyIsIm5iZiI6MTczMTUwNzMwMS41NzQ1MjAzLCJzdWIiOiI2Njk0MjEwODczZmY2ZDZlZGRmNDgxMWMiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.D2212ir-BMFf5clcDSgp-sBNWpLZGKDuNBRzAgoML_A',
+      Authorization: 'autorizacao',
     },
   };
 

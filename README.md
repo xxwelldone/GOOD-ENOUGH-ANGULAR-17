@@ -26,4 +26,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/PzEHPmE3yjOpEYODP9rVK6/goodenough?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+![Descrição da Imagem](</src/assets/GOOD%20ENOUGH%20(1).png>)
