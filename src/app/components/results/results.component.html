@@ -1,0 +1,20 @@
+<div class="results">
+  <h2 class="result__title">Results for your search:</h2>
+  <article class="film__result">
+    <div class="film__content" *ngFor="let item of resultArr">
+      <img class="film__image" [src]="posterPath + item.poster_path" alt="" />
+      <div class="film__details">
+        <h2 class="film__title">
+          {{ item.original_title || item.original_name }}
+        </h2>
+        <p class="film__about">
+          {{ item.overview }}
+        </p>
+        <p class="film__about">
+          {{ item.vote_average.toFixed() }} out of 10 Good Enough
+        </p>
+        <img class="film__like-icon" src="/assets/like.svg" alt="Like icon" />
+      </div>
+    </div>
+  </article>
+</div>

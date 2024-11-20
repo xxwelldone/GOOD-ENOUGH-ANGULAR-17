@@ -1,0 +1,17 @@
+<main class="main">
+  <h1 class="main__title">{{ title }}</h1>
+  <article class="film">
+    <div class="film__content" *ngFor="let item of popularArr">
+      <img class="film__image" [src]="posterPath + item.poster_path" alt="" />
+      <div class="film__details">
+        <h2 class="film__title">
+          {{ item.original_title || item.original_name }}
+        </h2>
+        <p class="film__rating">
+          {{ item.vote_average.toFixed() }} out of 10 Good Enough
+        </p>
+        <img class="film__like-icon" src="/assets/like.svg" alt="Like icon" />
+      </div>
+    </div>
+  </article>
+</main>

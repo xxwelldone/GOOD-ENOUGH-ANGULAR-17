@@ -1,0 +1,32 @@
+<header class="header">
+  <nav class="navbar">
+    <a [routerLink]="['']">
+      <img class="navbar__logo" src="/assets/GOODENOUGH.svg" alt="" srcset="" />
+    </a>
+    <ul class="navbar__list">
+      <li class="navbar__item">
+        <a href="" class="navbar__link">Get In</a>
+      </li>
+      <li class="navbar__item">
+        <a href="" class="navbar__link">About Us</a>
+      </li>
+      <li class="navbar__item">
+        <a href="" class="navbar__link">Film List</a>
+      </li>
+    </ul>
+    <form class="search" [formGroup]="searchForm">
+      <input
+        formControlName="term"
+        class="search__input"
+        type="text"
+        name=""
+        id="search"
+        placeholder="Xuxa 2"
+        [ngClass]="{ hide: hide }"
+      />
+      <button class="search__submit" (click)="handleClick($event)">
+        <img src="/assets/search.svg" alt="" srcset="" />
+      </button>
+    </form>
+  </nav>
+</header>
