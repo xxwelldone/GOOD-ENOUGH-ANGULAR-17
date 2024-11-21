@@ -1,3 +1,5 @@
+import { Igenre } from './iGenre';
+
 export interface Imovie {
   backdrop_path: string;
   id: number;
@@ -11,6 +13,8 @@ export interface Imovie {
   adult: boolean;
   original_language: string;
   popularity: number;
+  origin_country: string[];
+  genres: Igenre[];
   release_date: Date;
   vote_average: number;
   vote_count: number;

@@ -3,11 +3,12 @@ import { ApiService } from '../../services/api.service';
 import { map } from 'rxjs';
 import { Imovie } from '../../models/Imovie';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-popular',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './popular.component.html',
   styleUrl: './popular.component.css',
 })

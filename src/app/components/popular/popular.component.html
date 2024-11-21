@@ -1,7 +1,11 @@
 <main class="main">
   <h1 class="main__title">{{ title }}</h1>
   <article class="film">
-    <div class="film__content" *ngFor="let item of popularArr">
+    <div
+      class="film__content"
+      *ngFor="let item of popularArr"
+      [routerLink]="['/details', item.id]"
+    >
       <img class="film__image" [src]="posterPath + item.poster_path" alt="" />
       <div class="film__details">
         <h2 class="film__title">

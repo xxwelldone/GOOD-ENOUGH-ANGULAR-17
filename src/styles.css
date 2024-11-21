@@ -19,3 +19,6 @@ img[src$=".svg"] {
 a {
   text-decoration: none;
 }
+.film__content {
+  cursor: pointer;
+}

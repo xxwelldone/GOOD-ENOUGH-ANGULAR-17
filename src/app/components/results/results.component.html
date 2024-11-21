@@ -1,11 +1,15 @@
 <div class="results">
   <h2 class="result__title">Results for your search:</h2>
   <article class="film__result">
-    <div class="film__content" *ngFor="let item of resultArr">
+    <div
+      class="film__content"
+      *ngFor="let item of resultArr"
+      [routerLink]="['/details', item.id]"
+    >
       <img class="film__image" [src]="posterPath + item.poster_path" alt="" />
       <div class="film__details">
         <h2 class="film__title">
-          {{ item.original_title || item.original_name }}
+          {{ item.title || item.name }}
         </h2>
         <p class="film__about">
           {{ item.overview }}

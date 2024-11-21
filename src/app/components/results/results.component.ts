@@ -4,12 +4,12 @@ import { ApiService } from '../../services/api.service';
 import { CommunicationSearchResultService } from '../../services/communication-search-result.service';
 import { map, tap } from 'rxjs';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-results',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './results.component.html',
   styleUrl: './results.component.css',
 })

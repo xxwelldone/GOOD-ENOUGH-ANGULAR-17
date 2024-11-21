@@ -1,0 +1,35 @@
+<article class="film__detail">
+  <div class="film_visual-data">
+    <div class="detail_poster">
+      <h2 class="title">{{ movie.title }}</h2>
+      <img class="poster" [src]="posterPath + movie.poster_path" alt="" />
+    </div>
+    <div class="detail_film">
+      <div class="detail_points">
+        <p class="film__score">
+          {{ movie.vote_average.toFixed() }} out of 10 Good Enough
+        </p>
+        <img src="/assets/like.svg" alt="Like icon" />
+      </div>
+      <img src="/assets/play.svg" alt="Like icon" />
+    </div>
+  </div>
+
+  <div class="more_details">
+    <p>
+      {{ movie.overview }}
+    </p>
+    <ul class="country_list">
+      <h4 class="country_title">Country:</h4>
+      <li class="list_country">
+        {{ movie.origin_country }}
+      </li>
+    </ul>
+    <ul class="genre_list">
+      <h4 class="genre_title">Genre:</h4>
+      <li class="list_genre" *ngFor="let item of movie.genres">
+        {{ item.name }}
+      </li>
+    </ul>
+  </div>
+</article>
