@@ -38,6 +38,6 @@ export class HeaderComponent {
   search() {
     const term = this.searchForm.get('term')?.value;
     this.communication.setTerm(term);
-    this.router.navigate(['/searchResults']);
+    this.router.navigate(['/searchResults'], { queryParams: { page: 1 } });
   }
 }

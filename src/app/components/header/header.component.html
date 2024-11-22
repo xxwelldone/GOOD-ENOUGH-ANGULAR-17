@@ -3,7 +3,7 @@
     <a [routerLink]="['']">
       <img class="navbar__logo" src="/assets/GOODENOUGH.svg" alt="" srcset="" />
     </a>
-    <ul class="navbar__list">
+    <!-- <ul class="navbar__list">
       <li class="navbar__item">
         <a href="" class="navbar__link">Get In</a>
       </li>
@@ -11,9 +11,11 @@
         <a href="" class="navbar__link">About Us</a>
       </li>
       <li class="navbar__item">
-        <a href="" class="navbar__link">Film List</a>
+        <a href="" class="navbar__link" [routerLink]="['/filmlist']"
+          >Film List</a
+        >
       </li>
-    </ul>
+    </ul> -->
     <form class="search" [formGroup]="searchForm">
       <input
         formControlName="term"

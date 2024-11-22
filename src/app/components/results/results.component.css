@@ -43,6 +43,26 @@
 .film__like-icon {
   max-width: 86px;
 }
+.pagination {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.pagination_back,
+.pagination_next {
+  background-color: #d61010;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+.pagination_back:hover,
+.pagination_next:hover {
+  background-color: #f74e4e;
+}
 @media (min-width: 768px) {
   .film__result {
     grid-template-columns: repeat(2, minmax(300px, 1fr));

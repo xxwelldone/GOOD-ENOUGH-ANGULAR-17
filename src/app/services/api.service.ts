@@ -17,7 +17,7 @@ export class ApiService {
     },
   };
 
-  getResults(term: string, page: number = 1) {
+  getResults(term: string, page: number) {
     const url = ' https://api.themoviedb.org/3/search/movie?query=';
     const params = '&include_adult=false&language=en-US&page=';
     console.log(url + term + params + page);

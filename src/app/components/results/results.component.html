@@ -21,4 +21,17 @@
       </div>
     </div>
   </article>
+  <div class="pagination">
+    <button *ngIf="page > 1" class="pagination_back" (click)="onBack()">
+      <
+    </button>
+    {{ page }} out of {{ totalPages }}
+    <button
+      *ngIf="page < totalPages"
+      class="pagination_next"
+      (click)="onNext()"
+    >
+      >
+    </button>
+  </div>
 </div>
